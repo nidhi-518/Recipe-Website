@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+/*
+body {
+    scroll-padding-top: var(--top-spacing);
+  
+    margin: var(--top-spacing);
+} */
+
+#link-id1,
+#link-id2,
+#link-id3,
+#link-id4,
+#link-id5 {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+.hack-section {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 12vh 15vw; 
+    justify-content: center;
+    overflow: hidden; 
+    
+}
+
+
+
+
+.hack-link  {
+    font-size: 27px;
+    color: crimson;
+    margin: 20px;
+    justify-content: center;
+}
+
+.hack-link > a {
+    color: crimson;
+    text-decoration: none;
+}
+
+.hack-link > a:hover {
+    text-decoration: none;
+    color: inherit;
+    text-decoration:solid;
+    font-weight: 600;
+    transition: linear 1ms;
+}
+
+.hack-heading > span {
+    margin: 25px 20px 20px 20px;
+    font-size: 37px;
+    font-family: 'Lato',sans-serif;
+    font-weight:bold;
+    display: flex;
+}
+
+.hack-heading > img {
+    width: 80%;
+    height: 60%;
+    margin: 10px auto;
+    display: block;
+}
+
+.sub-heading {
+    margin: 15px 22px;
+}
+.sub-heading > span {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 7px ;
+    display: flex;
+}
+
+.sub-heading > p {
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5px 10px;
+}
+
+/*
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    
+} 
+
+.btn.back-to-top {
+    border-radius: 5px;
+    border-color: black;
+    border-width: 2px;
+    width: 40px;
+    display: inline-block;
+} */
+
+#back-to-top {
+    display: inline-block;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    align-items: center;
+/* }
+
+#back-to-top ::after { */
+
+  font-weight: normal;
+  font-style: normal;
+  font-size: medium;
+  line-height: 40px;
+  align-items: center;
+  
+  color: #fff;
+}
+
+i.fas.fa-chevron-up  {
+    text-align: center;
+    margin: 0 16px 0 5px;
+    padding: 10px;
+}

@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+		
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="navstyle.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="footerstyle.css" media="screen" />
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+    
+   
+    <link rel="stylesheet" href="https://www.w3.org/TR/page-visibility-2/" />
+    <link rel="import" href="/path/to/navbar.html"> 
+    <title>Recipe</title>
+
+    <style>
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+		
+    
+      @media screen and (max-width: 1518px) {
+        .categories  {
+          display: flex;
+          flex-wrap: wrap;
+          
+        }
+        .category {
+          position: relative;
+          height:inherit;
+          overflow: hidden;
+          
+        }
+        .category>img {
+          margin: 20px ;
+          justify-content: center;
+          flex-direction: row;
+        }        
+       }
+
+     /* .log_buttons {
+        display: flex;
+        float: right;
+        right: 0;
+        position: absolute;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50px;
+        width: 180px;
+        margin-right: 10px;
+      }
+
+      .button{
+        background-color: #e7225a;
+        width: 70px;
+        color: white;
+        border-radius: 7px ;
+        text-align: center;
+        height: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 1px 5px 12px rgb(230, 56, 56) inset;
+        border: 0;
+        outline: none;
+        font-weight: 500;
+        font-family: "Roboto";
+      } */
+      
+      
+      
+      
+      
+
+	</style> 
+</head>
+
+
+<body>
+  <!--div class="head">
+    <div id="head-logo">
+        Recepies 
+    </div>
+  <!--  <span style="color: white; font-family: 'Roboto'; align-items: center; ">Make delicious recipes for your family</span> -->
+  </div-->
+
+	<!-- <div class="cover"> -->
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://image.freepik.com/free-photo/front-view-sweet-chocolate-cake_23-2148834059.jpg" alt="1"  class="d-block w-100" >
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Life’s too short to say no to cake</h5>
+            <!--p>Some representative placeholder content for the first slide.</p-->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjgyNjgxNXx8ZW58MHx8fA%3D%3D&w=1000&q=80" class="d-block w-100" alt="2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Everything is better with pizza</h5>
+            <!--p>Some representative placeholder content for the second slide.</p-->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://wallpapercave.com/wp/wp3216103.jpg" class="d-block w-100" alt="3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Keep calm and make a milkshake</h5>
+            <!--p>Some representative placeholder content for the third slide.</p-->
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+ <!--   
+<div class="container">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!- Wrapper for slides ->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="https://image.freepik.com/free-photo/front-view-sweet-chocolate-cake_23-2148834059.jpg" alt="1" style="width:100%; height: 77.5vh; background-size: cover;">
+        <div class="carousel-caption">
+          <h4>Life’s too short to say no to cake</h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjgyNjgxNXx8ZW58MHx8fA%3D%3D&w=1000&q=80" alt="2" style="width:100%; height: 77.5vh; background-size: cover;">
+        <div class="carousel-caption">
+          <h4>Everything is better with pizza</h4>
+          <p></p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="https://wallpapercave.com/wp/wp3216103.jpg" alt="3" style="width:100%; height: 77.5vh; background-size: cover;" >
+        <div class="carousel-caption">
+          <h4>Keep calm and make a milkshake</h4>
+          <p></p>
+        </div>
+      </div>
+  
+    </div>
+
+  
+
+    <!- Left and right controls ->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div> -->
+    
+  <!--Navigation bar-->
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand active" href="index.html">Recipes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!--li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li-->
+          <!--li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cuisine
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="gujarati.html">Gujarati</a></li>
+              <li><a class="dropdown-item" href="#">Soutn Indian</a></li>
+              <!--li><hr class="dropdown-divider"></li-->
+              <li><a class="dropdown-item" href="#">North Indian</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Course
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Main Course</a></li>
+              <li><a class="dropdown-item" href="dessert.html">Desserts</a></li>
+              <!--li><hr class="dropdown-divider"></li-->
+              <li><a class="dropdown-item" href="#">Appetizers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hacks.html">Cooking Hacks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#myFooter">Contact Us</a>
+          </li>
+          <!--li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li-->
+        </ul>
+        
+        <!--div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-primary" type="button">Button</button>
+          <button class="btn btn-primary" type="button">Button</button>
+        </div-->
+
+        <ul class="nav navbar-nav navbar-right d-grid gap-2 d-md-flex justify-content-md-end">
+          <li><a href="signup.php" class=" btn btn-secondary" role="button" style="font-size: 15px;"><!--span class="glyphicon glyphicon-user" style="font-size: initial;" ></span--> Sign Up </a></li>
+          <li><a href="login.php" class=" btn btn-secondary " role="button" style="font-size: 15px;"><!--span class="glyphicon glyphicon-log-in" style="font-size: initial;"></span--> Login </a></li>
+        </ul>
+        <!--form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form-->
+      </div>
+    </div>
+  </nav>
+
+    <!-- <div>
+      <form class="d-flex" style="float: right; padding: 20px 15px; ">
+        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+     </form>
+    </div> -->
+
+  <!--Categories-->
+  <div class="heading">
+    
+    <div class="heading-topic category-a ">
+      <a href="#a" > Categories</a>
+    </div>
+    
+  </div>
+  <div class="categories" style="display: flex; flex-direction: row; font-size: 30px; overflow-x: scroll; width: 100vw; place-content: space-evenly; margin: 50px auto; ">
+		<div class="category">
+      
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMWYMOGQypoBD3GTJnGjXvV4XHljRlCsiTeeMBN92M4vpzAdI&s" alt="" ></img>
+			<span> <a href="recipes.html" class="recipe-heading"> All Recipes </a> </span>
+			
+      
+		</div>
+		<div class="category">
+			<img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="" >
+    	<span><a href="dessert.html" class="recipe-heading">Desserts</a></span>
+			</img>
+		</div>
+		<div class="category">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEKMwTjvOG25ZKXawE89DMjIiwkjeGsxIx0g&usqp=CAU" alt="" >
+			<span><a href="#a" class="recipe-heading">Kids</a></span>
+			</img>
+		</div>
+		<div class="category">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9GAXT1UQN-pntKhOmfNuQKGKYaagqxfeTw&usqp=CAU" alt="" >
+			<span><a href="#a" class="recipe-heading">Spicy</a></span>
+			</img>
+		</div>
+		<div class="category">
+			<img src="https://www.happyfoodstube.com/wp-content/uploads/2020/01/healthy-apple-snack-image.jpg" alt="" >
+			<span><a href="#a" class="recipe-heading">Snacks</a></span>
+			</img>
+		</div>
+		<div class="category">
+			<img src="https://veganoutreach.org/wp-content/uploads/Tofu%E2%80%94GARLICKY-CASHEW-BROCCOLI-TOFU-STIR-FRY.png" alt="" >
+				<span><a href="#a" class="recipe-heading">Vegan</a></span>
+			</img>
+		</div>
+	</div>
+
+
+<!-- season-trending -->
+  <div class="heading">
+    <div class="heading-topic season-trending ">
+      <a href="#a">Season Trending </a>
+    </div>
+    <!-- <div class="all">
+      <span> <a href="#a">See all</a></span>
+    </div> -->
+  </div>
+  
+  
+	<div class="recepie-cards ">
+    <!-- <div class="scroll scroll-right"> <i class="glyphicon glyphicon-chevron-right "></i> </div>
+      <div class="scroll scroll-left"> <i class="glyphicon glyphicon-chevron-left "></i> </div> -->
+		<div class="recepie-card">
+      <img class="recepie-img" src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2013/11/sarson-ka-saag-recipes-1.jpg" alt="">
+
+      <div class="recepie-details">
+        <div class="recepie-name">
+         <a href="#rname"> Sarson ka saag </a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            4 hrs
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            49000          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2014/12/tomato-soup-recipe.jpg" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="trending.html">Tomato soup </a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            25 mins
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            4800          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2017/03/gajar-halwa-recipe-2.jpg" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname">Gajar Halwa </a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            1 hr 10 mins
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            48600          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2017/03/thandai-recipe.jpg" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname"> Thandai</a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            1 hr 30 mins
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            48000          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2015/04/surti-undhiyu-recipe-2.jpg" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname"> Undhiyu</a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            1 hr 15 mins
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            46700          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2017/11/easy-rasam-recipe-11.jpg" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname"> Rasam</a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            30 min
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            49000          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+  </div>
+
+<!-- Popular -->
+  <div class="heading">
+    <div class="heading-topic popular">
+      <a href="#a" > Popular </a>
+    </div>
+    <!-- <div class="all">
+      <span> <a href="#a">See all</a></span>
+    </div> -->
+  </div>
+  
+  <div class="recepie-cards">
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2017/03/hara-bhara-kabab-veg-recipes-22.jpg" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname">Hara bhara kabab</a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            50 min
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            47500          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2013/10/rajma-masala-recipe.jpg" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname">  Rajma</a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            9 hrs 45 mins
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            48500          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2014/12/eggless-chocolate-cake-recipe.jpg" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname">Chocolate cake </a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            45 min
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            48900          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.zjefY9kgztPoVczdLgZ6LwHaHa%26pid%3DApi&f=1" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="Popular.html">Veg Pizza</a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            2 hrs 30 min
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            42000          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2014/07/veg-momos-recipe.jpg" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname">Momos </a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            35 min
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            37600          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://i.ndtvimg.com/i/2017-12/dal-makhani_620x330_71513153561.jpg" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname">Dal makkhni</a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            8 hrs 40 min
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            38000          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+  </div>
+      <!-- Latest -->
+  <div class="heading">
+    <div class="heading-topic latest">
+      <a href="#a" > Healthy recipes </a>
+    </div>
+    <!--<div class="all">
+      <span> <a href="#a">See all</a></span>
+    </div> -->
+  </div>
+  
+  <div class="recepie-cards">
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xRxTpp0ra5jP5MaYxzGYuAHaHa%26pid%3DApi&f=1" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname">Sprout salad</a> 
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            10 min
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            47500          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.I5dmq1CENGPJ8X-vBYwl5gHaLH%26pid%3DApi&f=1" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname">Veg soup</a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            15 min
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            46700          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Ow-ZSxxYfjHSedD6GHlsHwHaEK%26pid%3DApi&f=1" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname">Date & Walnut balls</a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            10 min
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            49000          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://image.freepik.com/free-photo/high-angle-sweet-pies-with-fruits-copy-space_23-2148834030.jpg" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname">Pani Puri</a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            45 min
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            10000          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://image.freepik.com/free-photo/high-angle-sweet-pies-with-fruits-copy-space_23-2148834030.jpg" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname">Pani Puri</a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            45 min
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            10000          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+    <div class="recepie-card">
+      <img class="recepie-img" src="https://image.freepik.com/free-photo/high-angle-sweet-pies-with-fruits-copy-space_23-2148834030.jpg" alt="">
+      </img>
+      <div class="recepie-details">
+        <div class="recepie-name">
+          <a href="#rname">Pani Puri</a>
+        </div>
+        <div class="recepie-time">
+          <div class="recepie-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <span class="recepie-info">
+            45 min
+          </span>
+        </div>
+        <div class="recepie-ingredients">
+          <div class="recepie-icon">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <span class="recepie-info">
+            10 Ingredients
+          </span>
+        </div>
+        <div class="recepie-views">
+          <div class="recepie-icon">
+            <i class="far fa-eye"></i>
+          </div>
+          <span class="recepie-info">
+            10000          
+          </span>
+        </div>
+        <div class="recepie-rating "></div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="footer" id="myFooter">
+  <div class="footer-one">
+    <div class="address">
+      <div class="footer-icon">
+        <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+      </div>
+      <div class="footer-info">
+        <div class="address-title">
+          Address
+        </div>
+        <div class="address-detail">
+          1010 Avenue, SW 54321, Rajkot
+        </div>
+      </div>
+    </div>
+    <div class="call" >
+      <div class="footer-icon">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+      </div>
+      <div class="footer-info">
+        <div class="call-title">
+          Call
+        </div>
+        <div class="call-detail">
+          9876543210 
+        </div>
+      </div>
+    </div>
+    <div class="mail">
+      <div class="footer-icon">
+        <i class="fa fa-envelope" aria-hidden="true"></i> 
+      </div>
+      <div class="footer-info">
+        <div class="mail-title">
+          Mail us
+        </div>
+        <div class="mail-detail">
+          foodrecipes@gmail.com
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border"></div>
+  <div class="footer-two">
+    <div class="company-logo " style="display: grid; place-content: center;  font-size: 36px;">
+      <span style="font-family: 'Sacramento'; font-weight:900; color: white; margin: 5px 0;">
+        Recepies
+      </span>
+      <div>
+        Welcome to this food recipes page! Here, you'll get each and every type of recipes. We will share every type of recipes and also some cooking-kitchen hacks. 
+        <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non facere sed et, atque nesciunt quo molestias quis voluptatem, laudantium dolor optio asperiores dolorem? Quaerat tempore quibusdam quod, consequatur facilis ex? -->
+      </div>
+    </div>
+    <div class="social-icon">
+      <a href="#instagram"><i class="fab fa-instagram-square"> </i></a>
+      <a href="#facebook"  ><i class="fab fa-facebook-square"> </i> </a>
+    <!--  <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-github-square"></i> -->
+      <a href="#snapchat"><i class="fab fa-snapchat-square"> </i> </a>
+    </div>
+  </div>
+  <!-- <div class="footer-copyright">
+    <span>
+      Copyright &copy; 2018, All Right Reserved 
+    </span> -->
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("navbar.html");
+  });
+</script>
+</body>
+
+
+
+
+
+</html>

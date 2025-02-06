@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+
+.footer {
+    height: auto;
+    width: 100vw;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Roboto";
+  }
+  
+  .footer-one,
+  .footer-two {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: auto;
+  }
+  
+  .border {
+    width: 100vw;
+    height: 1px;
+    border-bottom: 1px solid rgb(117, 117, 117, 0.5);
+    margin: 0 auto;
+  }
+  
+  .address,
+  .call,
+  .mail {
+    display: flex;
+    flex-direction: row;
+    width: 35vw;
+    align-items: center;
+    
+  }
+  
+  .footer-icon {
+    width: 5vw;
+    font-size: 32px;
+    display: grid;
+    place-items: center;
+    color: #b51845;
+  }
+  
+  .footer-info {
+    width: 25;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+  .address-title,
+  .call-title,
+  .mail-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #b51845;
+  }
+  
+  .address-detail,
+  .call-detail,
+  .mail-detail {
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(117, 117, 117);
+  }
+  
+  .company-logo {
+    width: 50%;
+  }
+  
+  .company-logo > div {
+    margin-top: 20px;
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: #7e7e7e;
+    line-height: 28px;
+    margin-right: 20px;
+  }
+  
+  .social-icon {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icon > i {
+    font-size: 4rem;
+    margin: 20px;
+  }
+  
+  .fa-instagram-square {
+    color: #e1306c;
+  }
+  
+  
+  a 
+  .fa-instagram-square  {
+    font-size: 4rem;
+    margin: 20px;
+  }
+  
+  .fa-facebook-square {
+    color: #4267b2;
+  }
+  
+  a 
+  .fa-facebook-square {
+    font-size: 4rem;
+    margin: 20px;
+  }
+  .fa-twitter-square {
+    color: #55acee;
+  }
+  .fa-linkedin {
+    color: #007bb5;
+  }
+  .fa-github-square {
+    color: #00e461;
+  }
+  .fa-snapchat-square {
+    color: #fffc00;
+  }
+  
+  
+  a 
+  .fa-snapchat-square {
+    font-size: 4rem;
+    margin: 20px;
+  }
+  
+  .social-icon i:hover{
+    transform: scale(1.2);
+    transition: all .5s ease;
+  } 
+  .footer-copyright {
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    background-color: rgb(44, 44, 44);
+    height: 40px;
+  }
+  
+  .footer-copyright > span {
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 300;
+  }
+  
+  #back-to-top {
+    display: inline-block;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    align-items: center;
+/* }
+
+#back-to-top ::after { */
+
+  font-weight: normal;
+  font-style: normal;
+  font-size: medium;
+  line-height: 40px;
+  align-items: center;
+  
+  color: #fff;
+}
+
+i.fas.fa-chevron-up  {
+    text-align: center;
+    margin: 0 16px 0 5px;
+    padding: 10px;
+}
+  

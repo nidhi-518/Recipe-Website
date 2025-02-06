@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+      }
+      
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      body::-webkit-scrollbar {
+        display: none;
+      }
+      
+      /* Hide scrollbar for IE, Edge and Firefox */
+      body {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      } 
+
+      a.navbar-brand {
+        font-family: 'Sacramento';
+        font-weight:900; 
+        color: white; 
+        margin: 5px 0; 
+        font-size: 35px;
+        padding: 0 20px;
+      }
+      .navbar-nav {
+        font-size: 20px;
+      
+        font-family: 'Roboto';
+      }
+      
+      
+      .navbar-header > a:hover {
+        text-decoration: none;
+      }
+      .heading-topic a:visited,
+      a.recipe-heading:visited,
+      .recepie-name a:visited  {
+        text-decoration: none;
+        color: inherit;
+      } 
+      
+      a.recipe-heading {
+        text-decoration: none;
+      }      
+
+
+      li.breadcrumb-item > a,
+      li.breadcrumb-item {
+        text-decoration: none;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        color: crimson;
+      }
+
+      li.breadcrumb-item > a:hover {
+        text-decoration: underline;
+        
+        color: crimson;
+      }
+
+
+
+
+
+
+
+
+
+
+/*        .navbar-custom {
+        background-color: black;
+        color: white;
+        }
+        .nav-link,
+        .nav-link:hover,
+        .nav-link:visited  {
+        color: white;
+        text-decoration: none;
+        }
+
+        .nav-item,
+        .nav-link,
+        .form-inline {
+        font-size: 20px;
+        padding-left: 15px;
+        font-family: 'Roboto';
+        }
+
+        /* recipe logo navbar *
+        a span {
+        font-family: 'Sacramento';
+        font-weight:900; 
+        color: white; 
+        margin: 5px 0; 
+        font-size: 35px;
+        }
+
+        .navbar-header > a:hover {
+        text-decoration: none;
+        }
+
+        /*
+        span a {
+        text-decoration: none;
+        color: black;
+        }
+
+        span a:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 240, 0.865);
+        } *
+
+        a:link, a:visited {
+        text-decoration: none;
+        color: inherit;
+        }
+
+        a:hover, a:active {
+        text-decoration: none;
+        color: inherit;
+        }
+
+        /* for all links *
+        .heading-topic a:visited,
+        a.recipe-heading:visited,
+        .recepie-name a:visited  {
+        text-decoration: none;
+        color: inherit;
+        }
+
+        ul.dropdown-menu {
+        background-color: black;
+        border-color: rgb(56, 56, 56);
+        border-width: 1px;
+        border-radius: 2px;
+        }
+
+        ul.dropdown-menu > li a.dropdown-item {
+        color: rgb(117, 117, 117);
+        font-size: 15px;
+        }
+
+        ul.dropdown-menu > li a.dropdown-item:hover {
+        color: white;
+        background-color: inherit;
+        }
+
+        a.nav-link:hover,
+        ul.nav li a:hover {
+        background-color: rgb(39, 39, 39);
+        } */
+
+    
